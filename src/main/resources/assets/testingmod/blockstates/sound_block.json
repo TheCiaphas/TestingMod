@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "testingmod:block/sound_block"
+    }
+  }
+}

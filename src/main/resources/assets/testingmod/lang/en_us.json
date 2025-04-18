@@ -14,6 +14,7 @@
   "block.testingmod.adamantium_ore": "Adamantium Ore",
   "block.testingmod.raw_adamantium_block": "Block of Raw Adamantium",
   "block.testingmod.adamantium_block": "Block of Adamantium",
+  "block.testingmod.sound_block": "Sound Block",
 
   "creativetab.testing_tab": "40Core Testing"
 }

@@ -34,6 +34,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.RAW_ADAMANTIUM_BLOCK.get());
                         output.accept(ModBlocks.ADAMANTIUM_BLOCK.get());
 
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
+
 
                     })
                     .build());
