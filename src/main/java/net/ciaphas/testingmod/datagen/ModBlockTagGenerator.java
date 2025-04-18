@@ -13,8 +13,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.ciaphas.testingmod.block.ModBlocks.END_SAPPHIRE_ORE;
-import static net.ciaphas.testingmod.block.ModBlocks.NETHER_SAPPHIRE_ORE;
+import static net.ciaphas.testingmod.block.ModBlocks.*;
 
 public class ModBlockTagGenerator extends BlockTagsProvider {
     public ModBlockTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
@@ -46,5 +45,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(NETHER_SAPPHIRE_ORE.get());
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(END_SAPPHIRE_ORE.get());
+        this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOLS)
+                .add(SOUND_BLOCK.get());
     }
 }

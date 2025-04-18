@@ -9,6 +9,12 @@
   "item.testingmod.pine_cone": "Pine Cone",
   "item.testingmod.promethium": "Promethium Cannister",
 
+  "item.testingmod.sapphire_sword": "Sapphire Sword",
+  "item.testingmod.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.testingmod.sapphire_axe": "Sapphire Axe",
+  "item.testingmod.sapphire_shovel": "Sapphire Shovel",
+  "item.testingmod.sapphire_hoe": "Sapphire Hoe",
+
   "block.testingmod.sapphire_block": "Block of Sapphire",
   "block.testingmod.raw_sapphire_block": "Block of Raw Sapphire",
   "block.testingmod.sapphire_ore": "Sapphire Ore",

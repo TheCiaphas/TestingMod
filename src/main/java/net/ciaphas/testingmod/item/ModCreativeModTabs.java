@@ -30,6 +30,12 @@ public class ModCreativeModTabs {
 //FUELS
                         output.accept(ModItems.PINE_CONE.get());
                         output.accept(ModItems.PROMETHIUM.get());
+//TOOLS
+                        output.accept(ModItems.SAPPHIRE_PICKAXE.get());
+                        output.accept(ModItems.SAPPHIRE_AXE.get());
+                        output.accept(ModItems.SAPPHIRE_SHOVEL.get());
+                        output.accept(ModItems.SAPPHIRE_SWORD.get());
+                        output.accept(ModItems.SAPPHIRE_HOE.get());
 //BLOCKS
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
