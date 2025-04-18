@@ -46,6 +46,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.ADAMANTIUM.get())
                 .unlockedBy(getHasName(ModItems.ADAMANTIUM.get()), has(ModItems.ADAMANTIUM.get()))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_ADAMANTIUM_BLOCK.get())
+                .pattern("RRR")
+                .pattern("RRR")
+                .pattern("RRR")
+                .define('R', ModItems.RAW_ADAMANTIUM.get())
+                .unlockedBy(getHasName(ModItems.RAW_ADAMANTIUM.get()), has(ModItems.RAW_ADAMANTIUM.get()))
+                .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
@@ -55,7 +62,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.ADAMANTIUM_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.ADAMANTIUM_BLOCK.get()), has(ModBlocks.ADAMANTIUM_BLOCK.get()))
                 .save(consumer);
-
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_ADAMANTIUM.get(), 9)
+                .requires(ModBlocks.RAW_ADAMANTIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.RAW_ADAMANTIUM_BLOCK.get()), has(ModBlocks.RAW_ADAMANTIUM_BLOCK.get()))
+                .save(consumer);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
