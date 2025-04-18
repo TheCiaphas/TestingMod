@@ -18,12 +18,19 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.testing_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+//ITEMS
                         output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
                         output.accept(ModItems.RAW_ADAMANTIUM.get());
                         output.accept(ModItems.ADAMANTIUM.get());
                         output.accept(ModItems.METAL_DETECTOR.get());
-
+//FOODS
+                        output.accept(ModItems.STRAWBERRY.get());
+                        output.accept(ModItems.BANANA.get());
+//FUELS
+                        output.accept(ModItems.PINE_CONE.get());
+                        output.accept(ModItems.PROMETHIUM.get());
+//BLOCKS
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.SAPPHIRE_ORE.get());

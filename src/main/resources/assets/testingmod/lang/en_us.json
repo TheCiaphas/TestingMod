@@ -4,6 +4,10 @@
   "item.testingmod.raw_adamantium": "Raw Adamantium",
   "item.testingmod.adamantium": "Adamantium Ingot",
   "item.testingmod.metal_detector": "Metal Detector",
+  "item.testingmod.strawberry": "Strawberry",
+  "item.testingmod.banana": "Banana",
+  "item.testingmod.pine_cone": "Pine Cone",
+  "item.testingmod.promethium": "Promethium Cannister",
 
   "block.testingmod.sapphire_block": "Block of Sapphire",
   "block.testingmod.raw_sapphire_block": "Block of Raw Sapphire",
@@ -15,6 +19,8 @@
   "block.testingmod.raw_adamantium_block": "Block of Raw Adamantium",
   "block.testingmod.adamantium_block": "Block of Adamantium",
   "block.testingmod.sound_block": "Sound Block",
+
+  "tooltip.testingmod.metal_detector": "Finds valuables underground.",
 
   "creativetab.testing_tab": "40Core Testing"
 }
