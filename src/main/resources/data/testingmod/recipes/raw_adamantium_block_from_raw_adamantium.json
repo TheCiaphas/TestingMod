@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "testingmod:raw_adamantium"
+    }
+  },
+  "result": {
+    "item": "testingmod:raw_adamantium_block"
+  }
+}

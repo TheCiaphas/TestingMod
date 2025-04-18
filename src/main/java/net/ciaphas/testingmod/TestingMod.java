@@ -1,6 +1,8 @@
 package net.ciaphas.testingmod;
 
 import com.mojang.logging.LogUtils;
+import net.ciaphas.testingmod.block.ModBlocks;
+import net.ciaphas.testingmod.item.ModCreativeModTabs;
 import net.ciaphas.testingmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -28,7 +30,10 @@ public class TestingMod {
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -47,6 +52,7 @@ public class TestingMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.RAW_SAPPHIRE);
         }
     }
 

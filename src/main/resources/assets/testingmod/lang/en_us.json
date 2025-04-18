@@ -1,3 +1,19 @@
 {
-  "item.testingmod.sapphire": "Sapphire"
+  "item.testingmod.sapphire": "Sapphire",
+  "item.testingmod.raw_sapphire": "Raw Sapphire",
+  "item.testingmod.raw_adamantium": "Raw Adamantium",
+  "item.testingmod.adamantium": "Adamantium Ingot",
+  "item.testingmod.metal_detector": "Metal Detector",
+
+  "block.testingmod.sapphire_block": "Block of Sapphire",
+  "block.testingmod.raw_sapphire_block": "Block of Raw Sapphire",
+  "block.testingmod.sapphire_ore": "Sapphire Ore",
+  "block.testingmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.testingmod.nether_sapphire_ore": "Nether Sapphire Ore",
+  "block.testingmod.end_stone_sapphire_ore": "Endstone Sapphire Ore",
+  "block.testingmod.adamantium_ore": "Adamantium Ore",
+  "block.testingmod.raw_adamantium_block": "Block of Raw Adamantium",
+  "block.testingmod.adamantium_block": "Block of Adamantium",
+
+  "creativetab.testing_tab": "40Core Testing"
 }
