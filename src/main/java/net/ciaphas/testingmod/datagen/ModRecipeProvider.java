@@ -33,11 +33,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(consumer, ADAMANTIUM_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 100, "sapphire");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
-                .pattern("SSS")
+                .pattern("SSS") //Recipe pattern - Shaped Crafting
                 .pattern("SSS")
                 .pattern("SSS")
                 .define('S', ModItems.SAPPHIRE.get())
-                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))//Describes prerequisites to unlock recipe in recipe book
                 .save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ADAMANTIUM_BLOCK.get())
                 .pattern("AAA")
@@ -54,9 +54,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.RAW_ADAMANTIUM.get()), has(ModItems.RAW_ADAMANTIUM.get()))
                 .save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9) //Shapeless crafting, calls for only required material and output amount
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))//Describes prerequisites to unlock recipe in recipe book
                 .save(consumer);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ADAMANTIUM.get(), 9)
                 .requires(ModBlocks.ADAMANTIUM_BLOCK.get())

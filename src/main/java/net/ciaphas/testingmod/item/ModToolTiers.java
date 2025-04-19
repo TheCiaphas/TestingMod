@@ -12,7 +12,7 @@ import net.minecraftforge.common.TierSortingRegistry;
 import java.util.List;
 
 public class ModToolTiers {
-    public static final Tier SAPPHIRE = TierSortingRegistry.registerTier(
+    public static final Tier SAPPHIRE = TierSortingRegistry.registerTier( //Declares new tool tier above netherite
             new ForgeTier(5, 1500, 5f, 4f, 25,
                     ModTags.Blocks.NEEDS_SAPPHIRE_TOOLS, () -> Ingredient.of(ModItems.SAPPHIRE.get())),
             new ResourceLocation(TestingMod.MOD_ID, "sapphire"), List.of(Tiers.NETHERITE), List.of());

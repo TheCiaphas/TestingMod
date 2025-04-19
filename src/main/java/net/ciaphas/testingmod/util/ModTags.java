@@ -15,7 +15,7 @@ public class ModTags {
 
 
         private static TagKey<Block> tag(String name) {
-            return BlockTags.create(new ResourceLocation(TestingMod.MOD_ID, name));
+            return BlockTags.create(new ResourceLocation(TestingMod.MOD_ID, name)); //Method Marked for deprecation, may need revisiting
         }
     }
 
